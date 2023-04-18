@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Cloning repository') {
             steps {
-                bat 'xcopy /S "*" " E:/devops/htdocs/exp4" /Y'
+                bat 'copy /S "*" " E:/devops/htdocs/exp4" /Y'
             }
         }
         stage('Printing done') {
