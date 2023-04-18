@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Cloning repository') {
             steps {
-                bat 'git clone <repository URL> C:/Xamp/htdocs/exp4'
+                bat 'copy /S "*" "D:\devops\htdocs\exp4" /Y'
             }
         }
         stage('Printing done') {
