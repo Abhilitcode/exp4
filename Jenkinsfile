@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Checking python version') {
             steps {
-                bat 'python --version'
+                bat 'python -v'
             }
         }
         stage('Cloning repository') {
             steps {
-                bat 'copy /S "*" "D:/devops/htdocs/exp4" /Y'
+                bat 'copy /S "*" " D:/devops/htdocs/exp4" /Y'
             }
         }
         stage('Printing done') {
